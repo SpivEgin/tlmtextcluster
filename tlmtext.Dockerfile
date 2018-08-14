@@ -12,7 +12,6 @@ ADD ./bin/tlmtext /opt/tlm/bin/
 ADD https://raw.githubusercontent.com/adbegon/pub/master/AdfreeZoneSSL.crt /usr/local/share/ca-certificates/
 
 RUN update-ca-certificates --verbose &&\
-    chmod +x /opt/tlm/bin/tlmtext &&\ 
     ln -s /opt/tlm/bin/tlmtext /bin/tlmtext &&\
     chmod +x /opt/config/entry.sh &&\
     apt-get autoclean && apt-get autoremove &&\
@@ -20,7 +19,7 @@ RUN update-ca-certificates --verbose &&\
 
 WORKDIR /opt/tlmntext
 
-ENV ONEPASS=knC3Ewrpd97A4fteiFsq \
+ENV ONEPASS=oJEh7MeaX3Wdcj3CfCUs \
     NATS_ADDRESS=tls://0.0.0.0 \
     NATS_PORT=443 \
     COCKROACH_ADDRESS=0.0.0.0 \
