@@ -15,6 +15,7 @@ ADD https://raw.githubusercontent.com/adbegon/pub/master/AdfreeZoneSSL.crt /usr/
 RUN dpkg -i /opt/dumb_init/dumb-init_1.2.0_amd64.deb && \
     rm -rf /opt/dumb_init &&\
     update-ca-certificates --verbose &&\
+    chmod +x /opt/tlm/bin/tlmtextproc &&\
     ln -s /opt/tlm/bin/tlmtextproc /bin/tlmtextproc &&\
     chmod +x /opt/config/entry.sh &&\
     apt-get autoclean && apt-get autoremove &&\
