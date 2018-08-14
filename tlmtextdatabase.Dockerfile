@@ -12,6 +12,7 @@ ADD ./bin/tlmtextdb /opt/tlm/bin/
 ADD https://raw.githubusercontent.com/adbegon/pub/master/AdfreeZoneSSL.crt /usr/local/share/ca-certificates/
 
 RUN update-ca-certificates --verbose &&\
+    chmod +x /opt/tlm/bin/tlmtextdb &&\ 
     ln -s /opt/tlm/bin/tlmtextdb /bin/tlmtextdb &&\
     chmod +x /opt/config/entry.sh &&\
     apt-get autoclean && apt-get autoremove &&\
