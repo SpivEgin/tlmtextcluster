@@ -1,1 +1,1 @@
-git add -A && git commit -m "replaced bin try three" && git push
+git add -A && git commit -m "replaced bin try replaced bin and basd file" && git push
