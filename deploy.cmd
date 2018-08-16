@@ -1,1 +1,1 @@
-git add -A && git commit -m "replaced bin to fix sending" && git push
+git add -A && git commit -m "replaced bin 00" && git push
