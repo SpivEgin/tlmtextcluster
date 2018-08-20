@@ -19,7 +19,7 @@ RUN update-ca-certificates --verbose &&\
 
 WORKDIR /opt/tlmntext
 
-ENV ONEPASS=knC3Ewrpd97A4fteiFsq \
+ENV ONEPASS=oJEh7MeaX3Wdcj3CfCUs \
     NATS_ADDRESS=tls://0.0.0.0 \
     NATS_PORT=443 \
     COCKROACH_ADDRESS=0.0.0.0 \

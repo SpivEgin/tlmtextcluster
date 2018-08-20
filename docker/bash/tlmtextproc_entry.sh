@@ -3,4 +3,5 @@
 tlmtextproc init
 tlmtextproc adduser --username $COCKROACH_USER
 tlmtextproc crons &
-tlmtextproc txtserver
+tlmtextproc txtplivo &
+tlmtextproc txttwilio
