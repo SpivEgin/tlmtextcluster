@@ -1,1 +1,1 @@
-git add -A && git commit -m "added tlmapis connect" && git push
+git add -A && git commit -m "updated bin and removed entry from tlmapi" && git push

@@ -31,5 +31,5 @@ ENV ONEPASS=oJEh7MeaX3Wdcj3CfCUs \
     LISTEN_PORT=8443
 
 EXPOSE 8443
-ENTRYPOINT ["/opt/config/entry.sh"]
+#ENTRYPOINT ["/opt/config/entry.sh"]
 #CMD ["/opt/config/entry.sh"]
